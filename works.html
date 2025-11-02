@@ -1,0 +1,99 @@
+<div class="section">
+    <h2 class="section-title">what i helped with</h2>
+    <div class="works-grid">
+        <div class="work-item" data-work="crazyderbyarena">
+            <div class="work-image">
+                <img src="images/crazyderby.webp" alt="Crazy Derby" class="work-img">
+            </div>
+            <div class="work-content">
+                <h3 class="work-title">Crazy Derby</h3>
+                <p class="work-description">chaotic car game with combat system and powerups</p>
+                <div class="work-tags">
+                    <span class="work-tag">brainstorming</span>
+                    <span class="work-tag">smooth gameplay</span>
+                    <span class="work-tag">fixing lag</span>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+<style>
+    .works-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 30px;
+        margin-top: 30px;
+    }
+    
+    .work-item {
+        background: #1a1a1a;
+        border-radius: 10px;
+        overflow: hidden;
+        border: 1px solid #333;
+        transition: all 0.3s ease;
+        cursor: pointer;
+    }
+    
+    .work-item:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(255,255,255,0.1);
+        border-color: #555;
+    }
+    
+    .work-image {
+        width: 100%;
+        height: 200px;
+        overflow: hidden;
+        background-color: #2a2a2a;
+    }
+    
+    .work-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.3s ease;
+    }
+    
+    .work-item:hover .work-img {
+        transform: scale(1.05);
+    }
+    
+    .work-content {
+        padding: 20px;
+    }
+    
+    .work-title {
+        font-size: 1.3rem;
+        margin-bottom: 10px;
+        color: #ffffff;
+    }
+    
+    .work-description {
+        color: #cccccc;
+        margin-bottom: 15px;
+        line-height: 1.5;
+    }
+    
+    .work-tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+    
+    .work-tag {
+        background: #0a0a0a;
+        padding: 5px 10px;
+        border-radius: 15px;
+        font-size: 0.8rem;
+        color: #888;
+        border: 1px solid #333;
+    }
+    
+    @media (max-width: 768px) {
+        .works-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+</style>
